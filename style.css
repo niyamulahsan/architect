@@ -1,0 +1,366 @@
+/* google and other font support */
+@import url("https://fonts.googleapis.com/css?family=Hind|Nunito+Sans&display=swap");
+/* Universal color code bootstrap 4 & other css*/
+.font-hind {
+  font-family: 'Hind', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.fz-0 {
+  font-size: 0.8rem;
+}
+
+.fz-1 {
+  font-size: 1rem;
+}
+
+.fz-2 {
+  font-size: 1.25rem;
+}
+
+.fz-3, .header-change .navbar a {
+  font-size: 1.5rem;
+}
+
+.fz-4 {
+  font-size: 1.75rem;
+}
+
+.fz-5, header .navbar a {
+  font-size: 2rem;
+}
+
+.fz-6 {
+  font-size: 3rem;
+}
+
+.fz-7 {
+  font-size: 4rem;
+}
+
+.fz-8 {
+  font-size: 5rem;
+}
+
+.fz-9 {
+  font-size: 6rem;
+}
+
+.fz-auto {
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.sticky-top {
+  top: 70px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.overlay:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.on {
+  display: block !important;
+}
+
+/* content css */
+.html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Hind', sans-serif;
+  font-size: 13pt;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+header .navbar a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+header .container {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.header-change {
+  background: #007bff;
+}
+
+.header-change .navbar a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.header-change .container {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  max-width: 100% !important;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .carousel-item:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.slider .carousel-item {
+  height: 580px;
+  overflow: hidden;
+}
+
+.slider .carousel-item img {
+  height: 580px;
+}
+
+.slider .carousel-control-prev, .slider .carousel-control-next {
+  width: 3%;
+}
+
+.slider .carousel-indicators li {
+  content: attr(data-slide-to);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.slider .container {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 8.5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 47.5%;
+}
+
+.slider .container h1 {
+  font-size: 40pt;
+  font-weight: 200 !important;
+}
+
+.slider .container p {
+  font-size: 15pt;
+}
+
+.slider .container button {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  border-width: 2px;
+}
+
+.slider .container button:hover {
+  background: #000000;
+  color: #fff;
+  border-color: #000000;
+}
+
+.blog .card {
+  overflow: hidden;
+}
+
+.blog .card img {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.blog .card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blog .link-box {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+}
+
+.blog .txt-box {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+}
+
+.contact {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.contact img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -50%;
+  z-index: -1;
+}
+
+.contact .txt-box {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.rightbar {
+  width: 300px;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 10002;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.rightbar.on {
+  right: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/*-----About Us-----*/
+.banner {
+  position: relative;
+  height: 580px;
+  overflow: hidden;
+}
+
+.banner .container {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 8.5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 47.5%;
+}
+
+.banner .container h1 {
+  font-size: 40pt;
+  font-weight: 200 !important;
+}
+
+.banner .container p {
+  font-size: 15pt;
+}
+
+.banner .container button {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  border-width: 2px;
+}
+
+.banner .container button:hover {
+  background: #000000;
+  color: #fff;
+  border-color: #000000;
+}
+
+/*-------------------------------------@media(max-width: 767px)-----------------------------------*/
+@media (max-width: 767px) {
+  header {
+    background: #17a2b8;
+  }
+  header .navbar a {
+    font-size: 2rem;
+  }
+  .header-change .navbar a {
+    font-size: 1.5rem;
+  }
+  .slider {
+    padding-top: 74px;
+  }
+  .slider .carousel-item {
+    height: 100%;
+  }
+  .slider .carousel-item img {
+    height: 300px;
+  }
+  .slider .carousel-control-prev, .slider .carousel-control-next {
+    width: 10%;
+  }
+  .slider .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+  }
+  .slider .container {
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translateY(-50%, -50%);
+            transform: translateY(-50%, -50%);
+    width: 80%;
+  }
+  .slider .container h1 {
+    font-size: 12pt;
+  }
+  .slider .container p {
+    font-size: 10pt;
+  }
+  .slider .container button {
+    font-size: 7.5pt;
+  }
+  .contact {
+    height: 213px;
+  }
+  .contact img {
+    top: 0;
+  }
+  .contact h1 {
+    font-size: 100%;
+  }
+  .rightbar {
+    width: 250px;
+    min-height: 100%;
+    right: -250px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
